@@ -11,6 +11,7 @@ body {
     gap: 60px;
     display: grid;
     align-items: center;
+    justify-items: center;
     grid-template-rows: 100%;
     grid-template-columns: 2fr 3fr;
 }
@@ -20,6 +21,19 @@ body {
 .deuxieme {
     background-color: red;
 }
+.troisieme {
+    background-color: #050505;
+}
+.quatrieme {
+    background-color: #7c4319;
+}
+.cinq {
+    background-color: #311d0f;
+}
+.six {
+    background-color: #17191e;
+}
+
 .content2 {
     color: bisque;
 }
@@ -48,7 +62,11 @@ p {
 
 @media (max-width: 1024px) {
     .premiere,
-    .deuxieme {
+    .deuxieme,
+    .troisieme,
+    .quatrieme,
+    .cinq,
+    .six {
         padding: 20px 20px 20px 31px;
         border-radius: 40px;
     }
@@ -66,10 +84,16 @@ p {
 }
 @media (max-width: 1024px) and (orientation: portrait) {
     .page {
+        padding: 20px;
+        border-radius: 40px;
         grid-template-columns: 1fr;
+        gap: 27px;
     }
     .content,
     .content2 {
         display: none;
+    }
+    img {
+        border-radius: 20px;
     }
 }
