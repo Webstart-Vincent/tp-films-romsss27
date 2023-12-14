@@ -4,6 +4,25 @@ body {
     display: grid;
     gap: 40px;
 }
+
+main {
+    display: grid;
+
+    gap: 40px;
+
+    padding: 40px;
+
+    width: 100dvw;
+
+    height: 100dvh;
+
+    overflow: scroll;
+    grid-auto-columns: calc(100dvw - 80px);
+
+    grid-template-rows: calc(100dvh - 80px);
+    scroll-snap-type: y mandatory;
+}
+
 .page {
     padding: 120px;
     border-radius: 80px;
@@ -14,6 +33,7 @@ body {
     justify-items: center;
     grid-template-rows: 100%;
     grid-template-columns: 2fr 3fr;
+    scroll-snap-type: x mandatory;
 }
 .premiere {
     background-color: #c6c8ae;
